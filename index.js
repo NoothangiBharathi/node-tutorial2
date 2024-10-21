@@ -1,4 +1,4 @@
-console.log("Hello Node js")
+// console.log("Hello Node js")
 
 // const math=require("./math")
 // console.log(math);
@@ -21,3 +21,13 @@ console.log("Hello Node js")
 
 // console.log(http);
 // console.log(dt);
+
+
+const fs = require('fs');
+
+fs.readFile("demo.txt", 'utf8', (err,data) => {
+    if(err){
+        console.log(err)
+    }
+    console.log(data)
+})
